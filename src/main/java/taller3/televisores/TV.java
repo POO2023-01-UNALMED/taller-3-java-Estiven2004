@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class TV {
 
-    private static int numTV;
+    private static int numTV = 0;
     private Marca marca;
     private int canal;
     private int precio;
@@ -16,7 +16,7 @@ public class TV {
         this.canal = 1;
         this.volumen = 1;
         this.precio = 500;
-        numTV = numTV++;
+        numTV++;
     }   
     public Marca getMarca(){
         return marca;
