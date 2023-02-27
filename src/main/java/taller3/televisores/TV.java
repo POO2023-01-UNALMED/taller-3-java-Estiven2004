@@ -40,7 +40,9 @@ public class TV {
         return volumen;
     }
     public void setVolumen(int Vol){
+        if (estado == true){
         this.volumen = Vol;
+        }
     }
     public int getCanal(){
         return canal;
