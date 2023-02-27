@@ -48,7 +48,9 @@ public class TV {
         return canal;
     }
     public void setCanal(int can){
+        if (estado == true){
         this.canal = can;
+        }
     }
     public static int getNumTV(){
         return numTV;
