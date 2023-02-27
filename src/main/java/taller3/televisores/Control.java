@@ -21,11 +21,11 @@ public class Control{
     public void turnOff(){
         tv.turnOff();
     }
-    public void setCanal(int cana){
-        tv.setCanal(cana);
+    public void setCanal(int canal){
+        tv.setCanal(canal);
     }
     public void enlazar(TV tv1){
         this.tv = tv1;
-        tv1.setControl(this);
+        tv.setControl(this);
     }
 }
