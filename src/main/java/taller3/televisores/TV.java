@@ -47,11 +47,7 @@ public class TV {
     public int getCanal(){
         return canal;
     }
-    public void setCanal(int can){
-        if (estado == true){
-        this.canal = can;
-        }
-    }
+    
     public static int getNumTV(){
         return numTV;
     }
@@ -67,9 +63,16 @@ public class TV {
     public boolean getEstado(){
         return this.estado;
     }
+    public void setCanal(int can){
+        if (estado == true){
+            if (canal >= 1 && canal < 120){
+        this.canal = can;
+            }
+        }
+    }
     public void canalUp(){
         if (estado == true){
-            if (canal > 0 && canal < 120){
+            if (canal >= 1 && canal < 120){
                 canal++;
             }
         }
