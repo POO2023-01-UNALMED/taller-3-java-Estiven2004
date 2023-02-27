@@ -28,4 +28,10 @@ public class Control{
         this.tv = tv1;
         tv.setControl(this);
     }
+    public TV getTv(){
+        return tv;
+    }
+    public void setTv(TV Tv){
+        this.tv = Tv;
+    }
 }
